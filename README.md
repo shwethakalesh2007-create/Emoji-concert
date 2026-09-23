@@ -14,7 +14,7 @@ This little Python project turns emojis into instruments and creates a random mi
 
 ### 🛠️ Built With
 
-Python • Random • Winsound
+Python • Random • Winsound(only on windowws)
 
 ### ▶️ Run it
 
