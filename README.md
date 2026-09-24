@@ -7,7 +7,7 @@ This little Python project turns emojis into instruments and creates a random mi
 
 ### 🎶 What it does
 
-* 🎲 Creates a random song
+* 🎲 You can select what style u wanna hear
 * 🎵 Each emoji has its own sound
 * 🔊 Plays the song automatically
 * 🔄 Get a different song every time
