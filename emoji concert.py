@@ -12,11 +12,35 @@ emoji_beats = {
     "🎷": (400, 500)
 }
 
-print("🎵 Music Concert 🎵")
+# Different concert styles
+styles = {
+    "1": ["🎸", "🥁", "🎺"],
+    "2": ["🎹", "🎻", "🎷"],
+    "3": ["🥁", "🎺", "🎸", "🎷"],
+    "4": list(emoji_beats.keys())
+}
+
+print("🎵 MUSIC CONCERT 🎵")
 print()
 
+# Choose concert style
+print("Choose your concert style:")
+print("1. 🎸 Rock")
+print("2. 🎹 Chill")
+print("3. ⚡ Energetic")
+print("4. 🎲 Random")
+
+style_choice = input("\nEnter your choice: ")
+
+if style_choice not in styles:
+    print("Invalid choice! Using Random.")
+    style_choice = "4"
+
+selected_emojis = styles[style_choice]
+
+
 # Choose song length
-print("Choose your song length:")
+print("\nChoose your song length:")
 print("1. 4 emojis")
 print("2. 8 emojis")
 print("3. 12 emojis")
@@ -65,9 +89,9 @@ else:
 # Replay the concert
 while True:
 
-    # Create a random song
+    # Create a random song using the selected style
     song = [
-        random.choice(list(emoji_beats.keys()))
+        random.choice(selected_emojis)
         for _ in range(song_length)
     ]
 
